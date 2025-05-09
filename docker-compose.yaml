@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   mysql:
-    image: mysql:8.0
+    image: mysql:8.3
     container_name: meu-mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: vollmed_api
+      MYSQL_DATABASE: flashcards
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
     ports:
