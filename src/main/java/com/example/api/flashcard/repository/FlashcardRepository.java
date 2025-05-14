@@ -1,5 +1,7 @@
 package com.example.api.flashcard.repository;
 
-public class FlashcardRepository {
-  
-}
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.api.flashcard.model.Flashcard;
+
+public interface FlashcardRepository extends JpaRepository<Flashcard, Long> { }
